@@ -11,6 +11,7 @@ a:hover{
 }
 body{
     font-family: arial, sans-serif;
+    text-align:center;
 }
 
 html{
@@ -19,19 +20,75 @@ html{
 #head{
     width:100%;
     height:29px;
-    background-color:#111111;
+    background-color:#2d2d2d;
 }
 #content{
-    height:587px;
+    height:586px;
     width:100%;
     background-color:#ffffff;
 }
 #footer{
     width:100%;
     height:40px;
-    background-color:#dddddd;
+    background-color:#f2f2f2;
+    border-top:1px solid #e4e4e4;
+}
+/* menu bar */
+#head .nav,#head .subnav,#head .login{
+    list-style-type: none;
+    font-size:13px;
+}
+#head .nav >li{
+    float:left;
+}
+#head .nav >li:hover{
+    background:#666;
+}
+#head .nav .current span{
+    display:block;
+    height:2px;
+    background:#c00;
+}
+#head .nav .current{
+}
+#head .nav a{
+    display:block;
+    height:25px;
+    padding:6px 8px 0 8px;
+    float:left;
+    color:#ccc;
+}
+#head .nav a:hover{
+    text-decoration:none;
+}
+#head .nav img{
+    width:25px;
+    height:25px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: relative;
+    left: -15px;
+    top:3px;
+}
+#head ul .subnav{
+    display:none;
 }
 
+
+#head .login>li{
+    float:right;
+}
+#head .login a,#head .login img{
+    display:block;
+    height:25px;
+    padding:6px 8px;
+    color:#ccc;
+}
+#head .login img{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
 #content #logo{
     width:279px;
     height:200px;
@@ -49,7 +106,7 @@ html{
     font-weight:bold;
     font-size:16px;
     position: relative;
-    left:218px;
+    left:102px;
     top:-26px;
 }
 #content form{
@@ -70,11 +127,11 @@ html{
     width:21px;
     height:25px;
     position: relative;
-    left:500px;
+    left:252px;
     top:-25px;
 }
 #content #search_button{
-    margin:2px 29px 0 195px;
+    margin:2px 9px 0 -15px;
 }
 #content form button{
     color:#333;
@@ -89,22 +146,25 @@ html{
     width:450px;
     height:50px;
     margin:0 auto;
+    font-size:83%;
+    color:#222;
     position: relative;
     left:0px;
     top:135px;
 }
 #footer a{
     color:#666;
+    padding-left:12px;
     font-size:small;
 }
 #footer a .new{
     color:#b14436;
 }
 #footer .left{
-    padding:9px 22px 8px 21px;
+    padding:9px 25px 8px 25px;
     float:left;
 }
 #footer .right{
-    padding:9px 22px 8px 21px;
+    padding:9px 25px 8px 25px;
     float:right;
 }

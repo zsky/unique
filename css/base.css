@@ -1,20 +1,110 @@
-html,body{
+*{
     margin:0;
     padding:0;
     border:0;
 }
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+body{
+    font-family: arial, sans-serif;
+}
+
+html{
+    height:100%;
+}
 #head{
     width:100%;
-    height:50px;
+    height:29px;
     background-color:#111111;
 }
 #content{
+    height:587px;
     width:100%;
-    height:66666650px;
-    background-color:#eeeeee;
+    background-color:#ffffff;
 }
 #footer{
     width:100%;
+    height:40px;
+    background-color:#dddddd;
+}
+
+#content #logo{
+    width:279px;
+    height:200px;
+    margin:0 auto;
+    position: relative;
+    left: 0;
+    top:180px;
+}
+#logo img{
+    width:269px;
+    height:95px;
+}
+#logo h4{
+    color:#777;
+    font-weight:bold;
+    font-size:16px;
+    position: relative;
+    left:218px;
+    top:-26px;
+}
+#content form{
+    width:550px;
+    height:100px;
+    margin:0 auto;
+    position: relative;
+    left: 0;
+    top:140px;
+}
+
+#content form #search_text{
+    width:527px;
+    height:27px;
+    border: 1px solid #D4D0C8;
+}
+#content form img{
+    width:21px;
+    height:25px;
+    position: relative;
+    left:500px;
+    top:-25px;
+}
+#content #search_button{
+    margin:2px 29px 0 195px;
+}
+#content form button{
+    color:#333;
+    font-weight:bold;
+    font-size:11px;
+    width:80px;
+    height:29px;
+    border: 1px solid #c6c6c6;
+    padding;1px 5px;
+}
+#content #lang{
+    width:450px;
     height:50px;
-    background-color:#eeeeee;
+    margin:0 auto;
+    position: relative;
+    left:0px;
+    top:135px;
+}
+#footer a{
+    color:#666;
+    font-size:small;
+}
+#footer a .new{
+    color:#b14436;
+}
+#footer .left{
+    padding:9px 22px 8px 21px;
+    float:left;
+}
+#footer .right{
+    padding:9px 22px 8px 21px;
+    float:right;
 }

@@ -41,34 +41,45 @@ html{
  .nav li{
     float:left;
 }
+.nav{
+    margin-left:4px;
+}
  .login li{
     float:right;
+}
+.login{
+    margin-right:6px;
 }
 .login li div{
     background:url(../img/settings.png);
     background-position:0 0;
     height:17px;
     width:16px;
+    cursor:pointer;
 }
 .nav li:hover,.login li:hover{
     background:#666;
 }
-#head .nav .current span{
+.nav .current span{
     display:block;
     height:2px;
     background:#c00;
 }
+.nav .current a{
+    color:#FFF;
+    font-weight:bold;
+    padding-top:6px;
+}
 .nav a,.login a{
     display:block;
-    height:25px;
-    padding:6px 8px 0 8px;
+    height:21px;
+    padding:8px 6px 0 6px;
     float:left;
     color:#ccc;
 }
 .login div{
-    margin-top:6px;
-    margin-left:6px;
-    padding:6px 8px 0 8px;
+    margin:6px 6px 0;
+    padding:6px 0 0 0;
 }
 .nav a:hover,.login a:hover{
     text-decoration:none;
@@ -77,8 +88,8 @@ html{
     height:0;
     width:0;
     position: relative;
-    left:-6px;
-    top:5px;
+    left:-1px;
+    top:7px;
     background:transparent;
     border-style: solid dashed dashed;
     border-color: transparent;
@@ -90,15 +101,19 @@ html{
     width: 0;
     border-width: 3px 3px 0;
     padding-top: 1px;
-
+    margin-right:4px;
+}
+.li_subnav,.li_set{
+    border-left:1px solid #2d2d2d;
+    border-right:1px solid #2d2d2d;
 }
 /*  submenu  */
 .subnav{
     width:92px;
-    height:290px;
+    height:270px;
     position: relative;
-    left:-49px;
-    top:30px;
+    left:-50px;
+    top:29px;
     border-left:1px solid #bebebe;
     border-right:1px solid #bebebe;
     border-bottom:1px solid #bebebe;
@@ -106,11 +121,11 @@ html{
     overflow:auto;
 }
 .settings{
-    width:102px;
-    height:210px;
+    width:118px;
+    height:190px;
     position: relative;
-    left:72px;
-    top:32px;
+    left:68px;
+    top:29px;
     border-left:1px solid #bebebe;
     border-right:1px solid #bebebe;
     border-bottom:1px solid #bebebe;
@@ -118,20 +133,21 @@ html{
     overflow:auto;
     float:right;
 }
-.li_subnav,.li_set{
-    border-left:1px solid ;#bebebe
-    background:#fff;
+.subnav li{
+    width:92px;
+}
+.settings li{
+    width:118px;
 }
 .subnav li,.settings li{
-    width:92px;
-    height:30px;
+    height:27px;
     background:#fff;
     text-align:center;
     line-height:27px;
     white-space:nowrap;
 }
-.subnav li:hover,.settings li:hover{
-    background:#ddd;
+.subnav li:first-child,.settings li:first-child{
+    margin-top:12px;
 }
 .subnav a,.settings a{
     display:block;
@@ -139,14 +155,20 @@ html{
     cursor:pointer;
 }
 .subnav a:hover,.settings a:hover{
+    background:#ddd;
     text-decoration:none;
 }
-.subnav li hr{
-    margin:0;
-    HEIGHT: 25;
-    width:100%;
-    border:4px;
-    COLOR:333;
+.line:hover{
+    background:#fff;
+}
+.line span{
+    display:block;
+    height:1px;
+    background:#bebebe;
+    position: relative;
+    left: 0;
+    top:12px;
+
 }
 
 #content #logo{
@@ -155,7 +177,7 @@ html{
     margin:0 auto;
     position: relative;
     left: 0;
-    top:180px;
+    top:165px;
 }
 #logo img{
     width:269px;
@@ -175,24 +197,33 @@ html{
     margin:0 auto;
     position: relative;
     left: 0;
-    top:140px;
+    top:90px;
 }
 
-#content form #search_text{
-    width:527px;
+#search_text{
+    width:567px;
     height:27px;
-    border: 1px solid #D4D0C8;
+    outline:none;
+    border: 1px solid #ccc;
     font-size:17px;
+}
+#search_text:hover{
+    border: 1px solid #aaa;
 }
 #content form img{
     width:21px;
-    height:25px;
+    height:23px;
     position: relative;
-    left:252px;
+    left:279px;
     top:-25px;
+    cursor:pointer;
+    opacity:0.55;
+}
+#content form img:hover{
+    opacity:0.8;
 }
 #content #search_button{
-    margin:2px 9px 0 -15px;
+    margin:0 9px 0 9px;
 }
 #content form button{
     color:#333;
@@ -202,6 +233,10 @@ html{
     height:29px;
     border: 1px solid #c6c6c6;
     padding;1px 5px;
+    position: relative;
+    left:0;
+    top:-15px;
+    background:#f8f8f8;
 }
 #content #lang{
     width:450px;
@@ -211,7 +246,7 @@ html{
     color:#222;
     position: relative;
     left:0px;
-    top:135px;
+    top:115px;
 }
 #footer a{
     color:#666;
